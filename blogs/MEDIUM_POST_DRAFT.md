@@ -177,9 +177,7 @@ This is how we stay.
 
 ---
 
-**[Full architecture document: link]**
-**[Cost analysis and partnership model: link]**
-**[GitHub repo: link]**
+**[[GitHub repo: link]](https://github.com/RoushAH/Project_Ares)**
 
 ---
 
