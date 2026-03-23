@@ -105,8 +105,22 @@ Every crew has their backup hardware arrive with them, not 26 months later.
 | Vehicle | Role | Notes |
 |---------|------|-------|
 | HAB | Surface habitat | Pre-positioned; accumulates into Base Alpha |
-| Unpressurized Rover | Local EVA transport | Apollo LRV heritage; Ares I-II |
+| Unpressurized Rover | Local transport + assembly tractor | Apollo LRV heritage; also tows/positions HABs for base assembly; Ares I-II |
 | Pressurized Rover | Extended traverse | Multi-week expeditions; Ares III+ |
+
+### Landing Precision Requirement
+
+The natural redundancy model depends on hardware landing close together. "Walking distance" in this architecture means **within ~1-2 km** - close enough for EVA access and rover operations.
+
+**Current state:** Mars landing precision is historically measured in kilometers to tens of kilometers (landing ellipses). This architecture requires **~100 meter precision** - a significant engineering advancement over current capability.
+
+**Why it's achievable:**
+- Terrain-relative navigation (used by Perseverance) dramatically improved precision
+- Supersonic retropropulsion (Mars Dragon) enables powered guidance to landing
+- Pre-positioned beacons could provide terminal guidance
+- Each successive landing benefits from better site characterization
+
+**If precision falls short:** The unpressurized rover doubles as an assembly tractor. Even if HAB-2 lands 1-2 km from HAB-1, the rover can tow modules into position for connection. Landing precision is a goal; the architecture degrades gracefully if it's not perfect.
 
 ### Earth Return
 
@@ -279,6 +293,14 @@ Electrolyze the water:
 
 Net result: CO2 + 2H2 → CH4 + O2
 ```
+
+### The Hydrogen Question
+
+The Sabatier process recycles most of its hydrogen, but not all - and it needs seed hydrogen to start. There's no way around this: **each ISRU plant lands with a supply of hydrogen from Earth.**
+
+This is a mass penalty, but a manageable one. The alternative - bringing all propellant from Earth - is far worse (60-80 tons vs. the ~2-3 tons of seed hydrogen plus ISRU equipment).
+
+**Future optimization:** Martian water ice (confirmed at the poles and potentially at mid-latitudes) could eventually supplement or replace Earth-sourced hydrogen. Base Beta's polar location is partly chosen with this in mind. But the initial architecture doesn't depend on ice extraction - that's a capability that grows over time.
 
 ### ISRU Operations Model
 
