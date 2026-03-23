@@ -30,9 +30,9 @@ It's a framework that I believe addresses some hard problems in a way I haven't 
 
 | If you want... | Read this |
 |----------------|-----------|
-| The 8-minute hook | [Medium post](blog/medium-post.md) |
-| The full technical architecture | [Architecture briefing](docs/ARCHITECTURE.md) |
-| Cost estimates and partnership model | [Cost and comms](docs/COST_AND_PARTNERSHIP.md) |
+| The 8-minute hook | [Medium post](blogs/MEDIUM_POST_DRAFT.md) |
+| The full technical architecture | [Architecture briefing](docs/MARS_ARCHITECTURE_BRIEFING.md) |
+| Cost estimates and partnership model | [Cost and comms](docs/MARS_COST_AND_COMMS.md) |
 
 ## The Core Ideas
 
@@ -55,7 +55,7 @@ This isn't just a mission sequence. It's a pattern that scales. Each mission add
 
 ## Document Overview
 
-### [ARCHITECTURE.md](docs/ARCHITECTURE.md)
+### [MARS_ARCHITECTURE_BRIEFING.md](docs/MARS_ARCHITECTURE_BRIEFING.md)
 The full technical briefing. ~1,600 lines covering:
 - Mission philosophy and core principles
 - Vehicle manifest (Dragons, MTRV, MAV, HABs, rovers)
@@ -66,7 +66,7 @@ The full technical briefing. ~1,600 lines covering:
 - Cycler architecture
 - Known limitations and open questions
 
-### [COST_AND_PARTNERSHIP.md](docs/COST_AND_PARTNERSHIP.md)
+### [MARS_COST_AND_COMMS.md](docs/MARS_COST_AND_COMMS.md)
 The money and the politics:
 - Per-mission cost breakdown ($69-117B total over 25 years)
 - Phase-gated funding strategy
