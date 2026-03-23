@@ -1125,6 +1125,8 @@ Ares IV     Ares III crew        Ares V crew
 
 Every mission after Ares I has Mars-based real-time authority for both arrival AND departure.
 
+**Ares I's Unique Burden:** The first crew lands without this benefit - no one is home yet to watch over them. Their EDL will be managed from Earth with its inherent light-delay limitations, relying on automated systems and their own judgment during the critical minutes. This is an accepted cost of being first; every crew that follows benefits from the precedent Ares I establishes.
+
 ### The Favor Returned
 
 Each crew provides oversight for others and receives it in return:
