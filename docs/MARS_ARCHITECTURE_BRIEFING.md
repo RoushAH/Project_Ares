@@ -74,8 +74,8 @@ Every crew has their backup hardware arrive with them, not 26 months later.
 
 | Vehicle | Role | Notes |
 |---------|------|-------|
-| ERV | Earth Return Vehicle (Ares I only) | Dedicated first-mission return vehicle |
-| MTRV | Mars Transfer & Return Vehicle | Crew transit Earth-Mars; becomes next mission's ERV |
+| ERV | Earth Return Vehicle (Ares I only) | Backup return vehicle; MTRV-1 is primary, ERV guarantees redundancy since no previous MTRV exists |
+| MTRV | Mars Transfer & Return Vehicle | Crew transit Earth-Mars and back; becomes next mission's backup ERV |
 | Departure Tug | Boost to cycler velocity | Required for cycler ops (Ares VIII+) |
 
 ### Earth Orbital Segment
@@ -112,7 +112,7 @@ Every crew has their backup hardware arrive with them, not 26 months later.
 
 | Vehicle | Role | Notes |
 |---------|------|-------|
-| EDV (Cargo Dragon) | Earth entry | Cargo Dragon that traveled to Mars becomes Earth entry capsule |
+| EDV (Cargo Dragon) | Earth entry | Cargo Dragon attached to MTRV; serves as extra habitable volume during transit, converts to crew return capsule for Earth entry |
 
 ---
 
@@ -125,7 +125,7 @@ Rather than developing separate vehicles for each phase, leverage the Dragon pla
 **Two Dragons per mission:**
 
 1. **Mars Dragon (MDV)**: Modified Crew Dragon that launches crew from Earth AND descends to Mars surface
-2. **Cargo Dragon (EDV)**: Standard Cargo Dragon that travels with MTRV and becomes Earth entry vehicle
+2. **Cargo Dragon (EDV)**: Crew-capable Cargo Dragon that travels with MTRV, serves as extra habitable volume (storage, pantry, workspace) during transit, then becomes Earth entry vehicle with crew couches deployed for return
 
 ```
 Earth Surface → LEO:           Mars Dragon (crew inside)
@@ -161,6 +161,42 @@ Mars EDL sequence:
 - Common crew training
 - Economies of scale
 - Incremental development path
+
+### Earth Return Sequence
+
+The return journey uses the same MTRV that brought the crew to Mars:
+
+```
+Surface Operations Complete:
+1. Crew bids farewell to next mission's crew (handoff complete)
+2. Board MAV at surface base
+3. MAV ascent to Mars orbit (~8-10 minutes)
+
+Mars Orbit:
+4. Rendezvous and dock with MTRV (waiting in Mars orbit)
+5. Transfer to MTRV, verify systems
+6. Trans-Earth Injection (TEI) burn
+
+Earth Transit (~9 months):
+7. Crew lives in MTRV + Cargo Dragon (extra habitable volume)
+8. Cargo Dragon serves as storage, workspace, additional room
+
+Earth Arrival:
+9. Deploy crew couches in Cargo Dragon (always crew-capable, just stowed)
+10. Crew transfers to Cargo Dragon, seals hatch
+11. Cargo Dragon separates from MTRV
+12. MTRV performs disposal burn (heliocentric orbit or controlled disposal)
+13. Cargo Dragon (now EDV) performs controlled Earth entry
+14. Splashdown and recovery
+```
+
+**Why the MTRV doesn't return to Earth:**
+- No need to recover it (hypergolic propellant, purpose served)
+- Disposal avoids orbital debris
+- Cargo Dragon heat shield is proven for Earth entry; MTRV would need separate EDL system
+
+**Ares I Backup:**
+For Ares I only, a dedicated ERV waits in Mars orbit as backup. Since no previous MTRV exists, the ERV guarantees return capability if MTRV-1 has problems. The plan is always to return on MTRV-1; the ERV is insurance.
 
 ---
 
