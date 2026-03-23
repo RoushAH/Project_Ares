@@ -107,9 +107,7 @@ If you know why this won't work, tell me. If you know why it might, tell me that
 
 ## Contact
 
-For private feedback or questions, you can reach me at: [your email or preferred contact]
-
-For public discussion, use GitHub issues.
+For all feedback and questions, use [GitHub issues](../../issues). Keeping discussions public helps others learn from the conversation.
 
 ---
 
